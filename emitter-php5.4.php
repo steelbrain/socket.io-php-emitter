@@ -7,13 +7,13 @@ class Emitter{
           self::$namespace = $namespace;
      }
      public static function emit($rooms){
-          self::$redis->publish(self::$key, msgpack_pack(array(array(
+          self::$redis->publish(self::$key, msgpack_pack([[
                'type' => 2,
                'data' => array_slice(func_get_args(),1),
                'nsp' => self::$namespace
-          ), array(
+          ], [
                'rooms' => $rooms,
-               'flags' => array()
-          ))));
+               'flags' => []
+          ]]));
      }
 };
