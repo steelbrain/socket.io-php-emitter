@@ -1,7 +1,8 @@
 <?php
 class Socket_Emitter{
-     private static $key = 'socket.io#emitter',$namespace;
+     private static $key = 'socket.io#emitter';
      private static $redis;
+     public static $namespace;
      public static function init($redis,$namespace = '/'){
           self::$redis = $redis;
           self::$namespace = $namespace;
