@@ -5,7 +5,7 @@ Dead Simple Socket.io Emitter for PHP (HHVM Compatible). It makes use of Redis t
 
 ##Installation
 If you are running hhvm or php 5.6 just include `emitter-php5.6.php`.
-If you have php v5.4 >= v5.5 then `emitter-php5.4.php`. Otherwise `emitter-php5.pp` would work good for you.
+If you have php v5.4 >= v5.5 then `emitter-php5.4.php`. Otherwise `emitter-php5.php` would work good for you.
 
 Note: This library makes use of [msgpack](http://msgpack.org). So, If you have `msgpack` pecl extension installed then it's good otherwise you will also need to include the `emitter-msgpack.php`.
 ##Usage
